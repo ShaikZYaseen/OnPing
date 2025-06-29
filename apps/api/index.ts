@@ -9,7 +9,7 @@ const app = express()
 
 
 
-app.get("/api/v1/add-website",async(req:Request,res:Response) => {
+app.post("/api/v1/add-website",async(req:Request,res:Response) => {
     try {
         const {name} =req.body;
 
